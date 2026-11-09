@@ -1,0 +1,20 @@
+{"timestamp":"2026-11-09T05:26:03.949Z","suite":"E1-fastRoute","tarea":"app","opsPorSegundo":921158,"mediaMs":0.0012,"medianaMs":0.001,"p95Ms":0.0019,"maxMs":0.298,"muestras":421700}
+{"timestamp":"2026-11-09T05:26:03.955Z","suite":"E1-fastRoute","tarea":"archivo","opsPorSegundo":864237,"mediaMs":0.0014,"medianaMs":0.001,"p95Ms":0.0022,"maxMs":4.7189,"muestras":365487}
+{"timestamp":"2026-11-09T05:26:03.959Z","suite":"E1-fastRoute","tarea":"carpeta","opsPorSegundo":993279,"mediaMs":0.0012,"medianaMs":0.0009,"p95Ms":0.002,"maxMs":12.7808,"muestras":408595}
+{"timestamp":"2026-11-09T05:26:03.964Z","suite":"E1-fastRoute","tarea":"web","opsPorSegundo":687439,"mediaMs":0.0025,"medianaMs":0.0013,"p95Ms":0.0029,"maxMs":54.0385,"muestras":215429}
+{"timestamp":"2026-11-09T05:26:03.970Z","suite":"E1-fastRoute","tarea":"charla","opsPorSegundo":432397,"mediaMs":0.0033,"medianaMs":0.0025,"p95Ms":0.0058,"maxMs":15.0108,"muestras":152786}
+{"timestamp":"2026-11-09T05:26:03.973Z","suite":"E1-fastRoute","tarea":"historial","opsPorSegundo":548708,"mediaMs":0.0025,"medianaMs":0.0019,"p95Ms":0.0046,"maxMs":6.6646,"muestras":201788}
+{"timestamp":"2026-11-09T05:26:03.977Z","suite":"E1-fastRoute","tarea":"sistema","opsPorSegundo":504311,"mediaMs":0.0027,"medianaMs":0.0022,"p95Ms":0.0052,"maxMs":2.2805,"muestras":185966}
+{"timestamp":"2026-11-09T05:26:03.981Z","suite":"E1-fastRoute","tarea":"lote de 7","opsPorSegundo":80884,"mediaMs":0.0158,"medianaMs":0.0141,"p95Ms":0.0331,"maxMs":4.0277,"muestras":31648}
+{"timestamp":"2026-11-09T05:26:09.471Z","suite":"E1-extractFileSearch","tarea":"caso-1","opsPorSegundo":1024325,"mediaMs":0.0014,"medianaMs":0.0012,"p95Ms":0.0023,"maxMs":6.2488,"muestras":363792}
+{"timestamp":"2026-11-09T05:26:09.478Z","suite":"E1-extractFileSearch","tarea":"caso-2","opsPorSegundo":1593244,"mediaMs":0.0007,"medianaMs":0.0006,"p95Ms":0.0012,"maxMs":0.4439,"muestras":723339}
+{"timestamp":"2026-11-09T05:26:09.482Z","suite":"E1-extractFileSearch","tarea":"caso-3","opsPorSegundo":883099,"mediaMs":0.0018,"medianaMs":0.0012,"p95Ms":0.0028,"maxMs":31.8483,"muestras":279719}
+{"timestamp":"2026-11-09T05:26:09.487Z","suite":"E1-extractFileSearch","tarea":"caso-4","opsPorSegundo":824546,"mediaMs":0.0015,"medianaMs":0.0013,"p95Ms":0.0029,"maxMs":0.7903,"muestras":323202}
+{"timestamp":"2026-11-09T05:26:09.492Z","suite":"E1-extractFileSearch","tarea":"caso-5","opsPorSegundo":722859,"mediaMs":0.0019,"medianaMs":0.0015,"p95Ms":0.003,"maxMs":10.4331,"muestras":268222}
+{"timestamp":"2026-11-09T05:26:12.310Z","suite":"E1-parseRoutedIntent","tarea":"find_files válido","opsPorSegundo":503499,"mediaMs":0.0027,"medianaMs":0.0022,"p95Ms":0.0046,"maxMs":1.006,"muestras":182882}
+{"timestamp":"2026-11-09T05:26:12.316Z","suite":"E1-parseRoutedIntent","tarea":"conversación","opsPorSegundo":1041854,"mediaMs":0.0014,"medianaMs":0.0011,"p95Ms":0.0024,"maxMs":0.2255,"muestras":357228}
+{"timestamp":"2026-11-09T05:26:12.323Z","suite":"E1-parseRoutedIntent","tarea":"JSON roto","opsPorSegundo":21616,"mediaMs":0.0585,"medianaMs":0.0687,"p95Ms":0.0836,"maxMs":0.55,"muestras":8545}
+{"timestamp":"2026-11-09T05:26:15.682Z","suite":"E4-AsterController","tarea":"abrir app autorizada","opsPorSegundo":171268,"mediaMs":0.007,"medianaMs":0.0055,"p95Ms":0.0117,"maxMs":2.0501,"muestras":71912}
+{"timestamp":"2026-11-09T05:26:15.690Z","suite":"E4-AsterController","tarea":"buscar archivos","opsPorSegundo":165029,"mediaMs":0.0068,"medianaMs":0.0059,"p95Ms":0.0104,"maxMs":4.5501,"muestras":73737}
+{"timestamp":"2026-11-09T05:26:15.698Z","suite":"E4-AsterController","tarea":"búsqueda web ya sintetizada","opsPorSegundo":170231,"mediaMs":0.0065,"medianaMs":0.0058,"p95Ms":0.0084,"maxMs":10.067,"muestras":76782}
+{"timestamp":"2026-11-09T05:26:15.705Z","suite":"E4-AsterController","tarea":"conversación","opsPorSegundo":155309,"mediaMs":0.0089,"medianaMs":0.0057,"p95Ms":0.0227,"maxMs":4.1449,"muestras":55964}

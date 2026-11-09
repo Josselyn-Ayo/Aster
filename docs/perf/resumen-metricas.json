@@ -1,0 +1,568 @@
+{
+  "generatedAt": "2026-11-08T18:30:05.295Z",
+  "meta": {
+    "dataDir": "C:\\Users\\dgcis\\AppData\\Roaming\\com.aster.assistant",
+    "metrics": {
+      "records": 58,
+      "invalid": 0,
+      "missing": false
+    },
+    "audit": {
+      "records": 42,
+      "invalid": 0,
+      "missing": false
+    }
+  },
+  "metrics": [
+    {
+      "action": "find_files",
+      "label": "Buscar archivos y carpetas",
+      "n": 19,
+      "ok": 19,
+      "failed": 0,
+      "successRate": 100,
+      "totalAll": {
+        "n": 19,
+        "mean": 3247.26,
+        "p50": 1453,
+        "p95": 16384,
+        "max": 16384
+      },
+      "totalOk": {
+        "n": 19,
+        "mean": 3247.26,
+        "p50": 1453,
+        "p95": 16384,
+        "max": 16384
+      },
+      "interpret": {
+        "n": 19,
+        "mean": 346.11,
+        "p50": 45,
+        "p95": 965,
+        "max": 965
+      },
+      "execute": {
+        "n": 19,
+        "mean": 3236.79,
+        "p50": 1452,
+        "p95": 16368,
+        "max": 16368
+      },
+      "stt": {
+        "n": 19,
+        "mean": 3685.47,
+        "p50": 4700,
+        "p95": 10616,
+        "max": 10616
+      },
+      "tts": {
+        "n": 19,
+        "mean": 8.26,
+        "p50": 1,
+        "p95": 41,
+        "max": 41
+      }
+    },
+    {
+      "action": "web_search",
+      "label": "Búsqueda en Internet",
+      "n": 12,
+      "ok": 4,
+      "failed": 8,
+      "successRate": 33.3,
+      "totalAll": {
+        "n": 12,
+        "mean": 9240.17,
+        "p50": 1216,
+        "p95": 60459,
+        "max": 60459
+      },
+      "totalOk": {
+        "n": 4,
+        "mean": 4457.5,
+        "p50": 3913,
+        "p95": 5706,
+        "max": 5706
+      },
+      "interpret": {
+        "n": 12,
+        "mean": 7434.58,
+        "p50": 94,
+        "p95": 60154,
+        "max": 60154
+      },
+      "execute": {
+        "n": 12,
+        "mean": 9232.5,
+        "p50": 1216,
+        "p95": 60459,
+        "max": 60459
+      },
+      "stt": {
+        "n": 12,
+        "mean": 2531.08,
+        "p50": 0,
+        "p95": 10428,
+        "max": 10428
+      },
+      "tts": {
+        "n": 12,
+        "mean": 4.92,
+        "p50": 0,
+        "p95": 20,
+        "max": 20
+      }
+    },
+    {
+      "action": "conversation",
+      "label": "Conversación",
+      "n": 10,
+      "ok": 9,
+      "failed": 1,
+      "successRate": 90,
+      "totalAll": {
+        "n": 10,
+        "mean": 722.8,
+        "p50": 722,
+        "p95": 1279,
+        "max": 1279
+      },
+      "totalOk": {
+        "n": 9,
+        "mean": 802.67,
+        "p50": 748,
+        "p95": 1279,
+        "max": 1279
+      },
+      "interpret": {
+        "n": 10,
+        "mean": 6,
+        "p50": 2,
+        "p95": 16,
+        "max": 16
+      },
+      "execute": {
+        "n": 10,
+        "mean": 714.4,
+        "p50": 718,
+        "p95": 1279,
+        "max": 1279
+      },
+      "stt": {
+        "n": 10,
+        "mean": 3704,
+        "p50": 3704,
+        "p95": 8140,
+        "max": 8140
+      },
+      "tts": {
+        "n": 10,
+        "mean": 6,
+        "p50": 1,
+        "p95": 28,
+        "max": 28
+      }
+    },
+    {
+      "action": "open_authorized_app",
+      "label": "Abrir aplicación autorizada",
+      "n": 8,
+      "ok": 8,
+      "failed": 0,
+      "successRate": 100,
+      "totalAll": {
+        "n": 8,
+        "mean": 3902.75,
+        "p50": 2341,
+        "p95": 8319,
+        "max": 8319
+      },
+      "totalOk": {
+        "n": 8,
+        "mean": 3902.75,
+        "p50": 2341,
+        "p95": 8319,
+        "max": 8319
+      },
+      "interpret": {
+        "n": 8,
+        "mean": 2662.13,
+        "p50": 72,
+        "p95": 8313,
+        "max": 8313
+      },
+      "execute": {
+        "n": 8,
+        "mean": 3891.13,
+        "p50": 2339,
+        "p95": 8318,
+        "max": 8318
+      },
+      "stt": {
+        "n": 8,
+        "mean": 1509,
+        "p50": 0,
+        "p95": 6934,
+        "max": 6934
+      },
+      "tts": {
+        "n": 8,
+        "mean": 9.5,
+        "p50": 1,
+        "p95": 34,
+        "max": 34
+      }
+    },
+    {
+      "action": "create_folder",
+      "label": "Crear carpeta",
+      "n": 2,
+      "ok": 0,
+      "failed": 2,
+      "successRate": 0,
+      "totalAll": {
+        "n": 2,
+        "mean": 25,
+        "p50": 15,
+        "p95": 35,
+        "max": 35
+      },
+      "totalOk": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "interpret": {
+        "n": 2,
+        "mean": 6.5,
+        "p50": 0,
+        "p95": 13,
+        "max": 13
+      },
+      "execute": {
+        "n": 2,
+        "mean": 24,
+        "p50": 15,
+        "p95": 33,
+        "max": 33
+      },
+      "stt": {
+        "n": 2,
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "tts": {
+        "n": 2,
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "max": 0
+      }
+    },
+    {
+      "action": "system_info",
+      "label": "Información del sistema",
+      "n": 2,
+      "ok": 2,
+      "failed": 0,
+      "successRate": 100,
+      "totalAll": {
+        "n": 2,
+        "mean": 2636,
+        "p50": 1716,
+        "p95": 3556,
+        "max": 3556
+      },
+      "totalOk": {
+        "n": 2,
+        "mean": 2636,
+        "p50": 1716,
+        "p95": 3556,
+        "max": 3556
+      },
+      "interpret": {
+        "n": 2,
+        "mean": 1083,
+        "p50": 28,
+        "p95": 2138,
+        "max": 2138
+      },
+      "execute": {
+        "n": 2,
+        "mean": 2610.5,
+        "p50": 1688,
+        "p95": 3533,
+        "max": 3533
+      },
+      "stt": {
+        "n": 2,
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "tts": {
+        "n": 2,
+        "mean": 22,
+        "p50": 17,
+        "p95": 27,
+        "max": 27
+      }
+    },
+    {
+      "action": "automation:open_url",
+      "label": "Abrir dirección web (automation:open_url)",
+      "n": 1,
+      "ok": 0,
+      "failed": 1,
+      "successRate": 0,
+      "totalAll": {
+        "n": 1,
+        "mean": 668,
+        "p50": 668,
+        "p95": 668,
+        "max": 668
+      },
+      "totalOk": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "interpret": {
+        "n": 1,
+        "mean": 660,
+        "p50": 660,
+        "p95": 660,
+        "max": 660
+      },
+      "execute": {
+        "n": 1,
+        "mean": 668,
+        "p50": 668,
+        "p95": 668,
+        "max": 668
+      },
+      "stt": {
+        "n": 1,
+        "mean": 9609,
+        "p50": 9609,
+        "p95": 9609,
+        "max": 9609
+      },
+      "tts": {
+        "n": 1,
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "max": 0
+      }
+    },
+    {
+      "action": "automation:spotify",
+      "label": "Spotify",
+      "n": 1,
+      "ok": 1,
+      "failed": 0,
+      "successRate": 100,
+      "totalAll": {
+        "n": 1,
+        "mean": 309,
+        "p50": 309,
+        "p95": 309,
+        "max": 309
+      },
+      "totalOk": {
+        "n": 1,
+        "mean": 309,
+        "p50": 309,
+        "p95": 309,
+        "max": 309
+      },
+      "interpret": {
+        "n": 1,
+        "mean": 11,
+        "p50": 11,
+        "p95": 11,
+        "max": 11
+      },
+      "execute": {
+        "n": 1,
+        "mean": 289,
+        "p50": 289,
+        "p95": 289,
+        "max": 289
+      },
+      "stt": {
+        "n": 1,
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "tts": {
+        "n": 1,
+        "mean": 14,
+        "p50": 14,
+        "p95": 14,
+        "max": 14
+      }
+    },
+    {
+      "action": "cancelled_task",
+      "label": "cancelled_task",
+      "n": 1,
+      "ok": 0,
+      "failed": 1,
+      "successRate": 0,
+      "totalAll": {
+        "n": 1,
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "totalOk": {
+        "n": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "interpret": {
+        "n": 1,
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "execute": {
+        "n": 1,
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "stt": {
+        "n": 1,
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "tts": {
+        "n": 1,
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "max": 0
+      }
+    },
+    {
+      "action": "create_file",
+      "label": "Crear archivo",
+      "n": 1,
+      "ok": 1,
+      "failed": 0,
+      "successRate": 100,
+      "totalAll": {
+        "n": 1,
+        "mean": 21,
+        "p50": 21,
+        "p95": 21,
+        "max": 21
+      },
+      "totalOk": {
+        "n": 1,
+        "mean": 21,
+        "p50": 21,
+        "p95": 21,
+        "max": 21
+      },
+      "interpret": {
+        "n": 1,
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "execute": {
+        "n": 1,
+        "mean": 21,
+        "p50": 21,
+        "p95": 21,
+        "max": 21
+      },
+      "stt": {
+        "n": 1,
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "tts": {
+        "n": 1,
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "max": 0
+      }
+    },
+    {
+      "action": "move_files",
+      "label": "Mover archivos y carpetas",
+      "n": 1,
+      "ok": 1,
+      "failed": 0,
+      "successRate": 100,
+      "totalAll": {
+        "n": 1,
+        "mean": 21,
+        "p50": 21,
+        "p95": 21,
+        "max": 21
+      },
+      "totalOk": {
+        "n": 1,
+        "mean": 21,
+        "p50": 21,
+        "p95": 21,
+        "max": 21
+      },
+      "interpret": {
+        "n": 1,
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "execute": {
+        "n": 1,
+        "mean": 21,
+        "p50": 21,
+        "p95": 21,
+        "max": 21
+      },
+      "stt": {
+        "n": 1,
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "max": 0
+      },
+      "tts": {
+        "n": 1,
+        "mean": 0,
+        "p50": 0,
+        "p95": 0,
+        "max": 0
+      }
+    }
+  ]
+}

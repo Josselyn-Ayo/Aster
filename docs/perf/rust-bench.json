@@ -1,0 +1,101 @@
+{
+  "generatedAt": "2026-11-08T18:43:05.234Z",
+  "rows": [
+    {
+      "id": "search_files_acierto/profundo-20k",
+      "etiqueta": "Acierto profundo · árbol 20k",
+      "mediana_ns": 4675292850,
+      "media_ns": 4707828035,
+      "ic95_bajo_ns": 4543610850,
+      "ic95_alto_ns": 4755168500,
+      "mediana": "4.68 s",
+      "throughput": 233.75,
+      "throughput_unit": "µs/entrada",
+      "muestras": 20
+    },
+    {
+      "id": "search_files_barrido/completo/1k",
+      "etiqueta": "Barrido completo · árbol 1k",
+      "mediana_ns": 277308650,
+      "media_ns": 271224495,
+      "ic95_bajo_ns": 250896950,
+      "ic95_alto_ns": 290705500,
+      "mediana": "277.31 ms",
+      "throughput": 277.03,
+      "throughput_unit": "µs/entrada",
+      "muestras": 20
+    },
+    {
+      "id": "search_files_barrido/completo/20k",
+      "etiqueta": "Barrido completo · árbol 20k",
+      "mediana_ns": 4465686550,
+      "media_ns": 4618085235,
+      "ic95_bajo_ns": 4432347900,
+      "ic95_alto_ns": 4657834800,
+      "mediana": "4.47 s",
+      "throughput": 223.27,
+      "throughput_unit": "µs/entrada",
+      "muestras": 20
+    },
+    {
+      "id": "search_files_barrido/completo/5k-poda",
+      "etiqueta": "Barrido completo · árbol 5k + node_modules (poda)",
+      "mediana_ns": 1125128700,
+      "media_ns": 1139929330,
+      "ic95_bajo_ns": 1106097500,
+      "ic95_alto_ns": 1177894300,
+      "mediana": "1.13 s",
+      "throughput": 160.71,
+      "throughput_unit": "µs/entrada",
+      "muestras": 20
+    },
+    {
+      "id": "search_files_solo_carpetas/grupo-39-5k-poda",
+      "etiqueta": "Solo carpetas · árbol 5k + poda",
+      "mediana_ns": 65965137.5,
+      "media_ns": 65999120,
+      "ic95_bajo_ns": 62618900,
+      "ic95_alto_ns": 69343162.5,
+      "mediana": "65.97 ms",
+      "throughput": 9.42,
+      "throughput_unit": "µs/entrada",
+      "muestras": 20
+    },
+    {
+      "id": "websearch_parse/bing-500kb",
+      "etiqueta": "Parser Bing · página 500 KB",
+      "mediana_ns": 109956.68,
+      "media_ns": 110886.5,
+      "ic95_bajo_ns": 105086.92,
+      "ic95_alto_ns": 115376.76,
+      "mediana": "109.96 µs",
+      "throughput": 4541.44,
+      "throughput_unit": "MB/s",
+      "muestras": 50
+    },
+    {
+      "id": "websearch_parse/duckduckgo-500kb",
+      "etiqueta": "Parser DuckDuckGo · página 500 KB",
+      "mediana_ns": 76125.73,
+      "media_ns": 81223.52,
+      "ic95_bajo_ns": 72127.49,
+      "ic95_alto_ns": 84018.35,
+      "mediana": "76.13 µs",
+      "throughput": 6559.83,
+      "throughput_unit": "MB/s",
+      "muestras": 50
+    },
+    {
+      "id": "websearch_parse/html-a-texto-500kb",
+      "etiqueta": "HTML a texto · página 500 KB",
+      "mediana_ns": 5480935,
+      "media_ns": 5578462.46,
+      "ic95_bajo_ns": 5208903.03,
+      "ic95_alto_ns": 5728381.94,
+      "mediana": "5.48 ms",
+      "throughput": 91.19,
+      "throughput_unit": "MB/s",
+      "muestras": 50
+    }
+  ]
+}

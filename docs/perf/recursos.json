@@ -1,0 +1,88 @@
+{
+    "entorno":  {
+                    "fecha":  "2026-11-08T13:28:40.6131624-05:00",
+                    "equipo":  "DIEGO",
+                    "sistema":  "Microsoft Windows 11 Pro 10.0.26200",
+                    "cpu":  "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+                    "nucleos_fisicos":  4,
+                    "hilos":  8,
+                    "ram_total":  "15.75 GB",
+                    "powershell":  "5.1.26100.9711",
+                    "node":  "v24.14.1",
+                    "npm":  "11.5.2",
+                    "rustc":  "rustc 1.98.0 (88d9e12ae 2026-08-18)"
+                },
+    "artefactos":  [
+                       {
+                           "tipo":  "Ejecutable release",
+                           "ruta":  "src-tauri\\target\\release\\aster-desktop-assistant.exe",
+                           "bytes":  14198784,
+                           "tamano":  "13.54 MB",
+                           "modificado":  "2026-11-08T12:56:28.0619603-05:00"
+                       },
+                       {
+                           "tipo":  "Ejecutable debug",
+                           "ruta":  "src-tauri\\target\\debug\\aster-desktop-assistant.exe",
+                           "bytes":  37468672,
+                           "tamano":  "35.73 MB",
+                           "modificado":  "2026-11-04T11:11:40.3069537-05:00"
+                       }
+                   ],
+    "dist":  {
+                 "bytes":  858354,
+                 "tamano":  "838.2 KB",
+                 "archivos":  [
+                                  {
+                                      "ruta":  "dist\\assets\\index-hsaV-MUY.js",
+                                      "bytes":  820507,
+                                      "tamano":  "801.3 KB"
+                                  },
+                                  {
+                                      "ruta":  "dist\\assets\\index-BoQT653X.css",
+                                      "bytes":  22389,
+                                      "tamano":  "21.9 KB"
+                                  },
+                                  {
+                                      "ruta":  "dist\\assets\\window-Bn9gJKIB.js",
+                                      "bytes":  14675,
+                                      "tamano":  "14.3 KB"
+                                  },
+                                  {
+                                      "ruta":  "dist\\index.html",
+                                      "bytes":  783,
+                                      "tamano":  "783 B"
+                                  }
+                              ]
+             },
+    "ejecutable":  "C:\\Users\\dgcis\\OneDrive\\Documentos\\Antony Cisneros\\Proyectos\\ASTER TIC\\src-tauri\\target\\release\\aster-desktop-assistant.exe",
+    "motivo_sin_arranque":  "",
+    "corridas":  [
+                     {
+                         "corrida":  1,
+                         "tipo":  "frio",
+                         "ventana_ms":  1190.5,
+                         "ram_bytes":  417734656,
+                         "ram":  "398.38 MB",
+                         "ram_privada":  "177.90 MB",
+                         "procesos":  8,
+                         "webviews":  7,
+                         "cpu_reposo_pct":  4.98
+                     }
+                 ],
+    "arranque_ms":  {
+                        "n":  1,
+                        "media":  1190.5,
+                        "mediana":  1190.5,
+                        "p95":  1190.5,
+                        "minimo":  1190.5,
+                        "maximo":  1190.5
+                    },
+    "ram_mb":  {
+                   "n":  1,
+                   "media":  398.4,
+                   "mediana":  398.4,
+                   "p95":  398.4,
+                   "minimo":  398.4,
+                   "maximo":  398.4
+               }
+}

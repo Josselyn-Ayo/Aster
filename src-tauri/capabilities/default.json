@@ -1,0 +1,12 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Permisos minimos de ASTER. No se habilita ningun plugin de Tauri (ni shell, ni fs, ni http), por lo que la aplicacion no puede ejecutar comandos, scripts ni elevar privilegios. Los comandos IPC que definen las siete acciones del catalogo se registran en `invoke_handler` y no requieren permiso adicional. Los tres permisos `core:window` son solo para la barra de titulo propia (minimizar, maximizar/restaurar, cerrar).",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "core:window:allow-minimize",
+    "core:window:allow-toggle-maximize",
+    "core:window:allow-close"
+  ]
+}

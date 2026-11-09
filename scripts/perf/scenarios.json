@@ -1,0 +1,82 @@
+{
+  "nombre": "Protocolo E5 · latencia extremo a extremo",
+  "version": 1,
+  "descripcion": "Guion fijo de órdenes para medir la latencia percibida de ASTER. Se usa cuando hay presupuesto de IA real; con proveedores simulados sirve de referencia y no se ejecuta.",
+  "condiciones": {
+    "calentamiento": "3 órdenes cualesquiera antes de la primera ronda, descartadas.",
+    "rondas": 3,
+    "orden": "En cada ronda se ejecutan las 10 órdenes en el orden listado.",
+    "pausa_entre_ordenes_s": 2,
+    "origen": "texto",
+    "recoleccion": "%APPDATA%\\com.aster.assistant\\metrics.jsonl y audit.jsonl",
+    "analisis": "node scripts/perf/report.mjs",
+    "excluir": "Interacciones con success=false (cuota 429, cancelaciones o errores de red)."
+  },
+  "ordenes": [
+    {
+      "id": "E5-01",
+      "texto": "Abre la calculadora",
+      "accion_esperada": "open_authorized_app",
+      "cubre": "IPC nativo + lista blanca de aplicaciones"
+    },
+    {
+      "id": "E5-02",
+      "texto": "Abre Google Chrome",
+      "accion_esperada": "open_authorized_app",
+      "cubre": "resolución de acceso directo en el menú Inicio"
+    },
+    {
+      "id": "E5-03",
+      "texto": "Busca tesis.pdf en documentos",
+      "accion_esperada": "find_files",
+      "cubre": "recorrido BFS del disco + formateo de resultados"
+    },
+    {
+      "id": "E5-04",
+      "texto": "Busca la carpeta Andi",
+      "accion_esperada": "find_files",
+      "cubre": "filtro foldersOnly y orden de coincidencias"
+    },
+    {
+      "id": "E5-05",
+      "texto": "Busca el precio del dólar en internet",
+      "accion_esperada": "web_search",
+      "cubre": "web_search en Rust + síntesis con el modelo de chat"
+    },
+    {
+      "id": "E5-06",
+      "texto": "¿Qué hora es en Quito?",
+      "accion_esperada": "conversation",
+      "cubre": "vía rápida local y respuesta de chat"
+    },
+    {
+      "id": "E5-07",
+      "texto": "Cuéntame algo interesante sobre la computación cuántica",
+      "accion_esperada": "conversation",
+      "cubre": "router LLM + respuesta larga"
+    },
+    {
+      "id": "E5-08",
+      "texto": "Dame un resumen del sistema",
+      "accion_esperada": "system_info",
+      "cubre": "lectura de hardware y discos en Rust"
+    },
+    {
+      "id": "E5-09",
+      "texto": "¿Qué hiciste hoy?",
+      "accion_esperada": "audit_query",
+      "cubre": "lectura del historial de auditoría"
+    },
+    {
+      "id": "E5-10",
+      "texto": "Crea una carpeta llamada Pruebas de rendimiento en Documentos",
+      "accion_esperada": "create_folder",
+      "cubre": "diálogo de confirmación (se cancela; no se escribe)"
+    }
+  ],
+  "notas": [
+    "La orden E5-10 se rechaza en el diálogo para no modificar el disco; su latencia mide preparación + confirmación humana y se reporta aparte.",
+    "Las órdenes de conversación y búsqueda consumen cuota real; si un proveedor responde 429, la interacción se marca como fallida y se excluye de la mediana de éxito.",
+    "El informe principal usa métricas históricas observacionales; este guion queda como protocolo replicable."
+  ]
+}

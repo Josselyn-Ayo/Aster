@@ -1,0 +1,11 @@
+accion;etiqueta;n;estados;p50_ms;p95_ms;max_ms;confirmadas
+find_files;Buscar archivos y carpetas;19;success:19;1451;16367;16367;0
+web_search;Búsqueda en Internet;10;error:6 success:4;1148;5693;5693;0
+open_authorized_app;Abrir aplicación autorizada;5;success:5;2038;2872;2872;0
+create_folder;Crear carpeta;2;error:1 cancelled:1;32;9739;9739;0
+automation:open_url;Abrir dirección web (automation:open_url);1;error:1;667;667;667;0
+cancelled_task;cancelled_task;1;cancelled:1;0;0;0;0
+conversation;Conversación;1;error:1;2;2;2;0
+create_file;Crear archivo;1;success:1;16299;16299;16299;1
+move_files;Mover archivos y carpetas;1;success:1;7126;7126;7126;1
+system_info;Información del sistema;1;success:1;3532;3532;3532;0

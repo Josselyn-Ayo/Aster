@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    @apply bg-aster-bg text-aster-text font-sans antialiased;
+    overflow: hidden;
+    user-select: none;
+  }
+}
+
+@layer components {
+  /* Barra de desplazamiento personalizada, discreta */
+  .aster-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+  .aster-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .aster-scroll::-webkit-scrollbar-thumb {
+    @apply bg-aster-border rounded-full;
+  }
+  .aster-scroll::-webkit-scrollbar-thumb:hover {
+    @apply bg-aster-accent;
+  }
+}
+
+@layer utilities {
+  /* Gradiente de texto para acentos futuristas */
+  .text-gradient {
+    @apply bg-gradient-to-r from-aster-accent2 via-aster-accent to-aster-accent3 bg-clip-text text-transparent;
+  }
+}

@@ -1,0 +1,85 @@
+[package]
+name = "aster-desktop-assistant"
+version = "0.1.0"
+description = "ASTER — Asistente Virtual Multimodal de Escritorio"
+authors = ["J&G Consultora"]
+edition = "2021"
+rust-version = "1.82"
+
+# El sufijo `_lib` es obligatorio en Windows: sin él, el nombre de la librería
+# coincide con el del binario y `cargo build` falla con un conflicto de salida.
+[lib]
+name = "aster_desktop_assistant_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dev-dependencies]
+# Benchmarks de rendimiento (E2 y E3). `tempfile` genera los árboles de
+# archivos sintéticos fuera del repositorio (en %TEMP%).
+criterion = { version = "0.5", features = ["html_reports"] }
+tempfile = "3"
+
+[[bench]]
+name = "files_search"
+harness = false
+
+[[bench]]
+name = "websearch_parse"
+harness = false
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", default-features = false, features = ["clock", "std", "serde"] }
+sysinfo = "0.39"
+walkdir = "2"
+screenshots = "0.8"
+image = { version = "0.24", default-features = false, features = ["png", "jpeg"] }
+base64 = "0.22"
+known-folders = "1.4"
+uuid = { version = "1", features = ["v4"] }
+tokio = { version = "1", features = ["rt-multi-thread", "time", "sync", "macros"] }
+futures-util = "0.3"
+mongodb = { version = "2.8", features = ["tokio-runtime"] }
+dotenvy = "0.15"
+# Búsqueda web propia (DuckDuckGo). Va en Rust y no en el WebView porque los
+# buscadores no envían cabeceras CORS: el fetch del frontend sería rechazado.
+reqwest = { version = "0.13", default-features = false, features = [
+  "rustls",
+  "charset",
+  "query",
+] }
+
+# Solo se usa la API de Windows que el backend necesita. No se incluye
+# `Win32_System_Com` de forma global ni el plugin `shell` de Tauri: el
+# asistente no ejecuta comandos ni scripts, solo resuelve y abre objetivos
+# concretos con `ShellExecuteW`.
+[target.'cfg(windows)'.dependencies]
+windows = { version = "0.62", features = [
+  "Win32_Foundation",
+  "Win32_Storage_FileSystem",
+  "Win32_System_Power",
+  "Win32_UI_Shell",
+  "Win32_UI_WindowsAndMessaging",
+] }
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+panic = "abort"
+strip = true
+
+# Perfil dedicado a `cargo bench`. Cargo ignora `panic` en `[profile.bench]`,
+# pero criterion necesita `unwind` (el release usa `abort` por tamaño). Por eso
+# los benchmarks se ejecutan con `--profile perf`, que hereda de release sin LTO
+# y con optimización completa.
+[profile.perf]
+inherits = "release"
+lto = false
+codegen-units = 16
+opt-level = 3
+panic = "unwind"

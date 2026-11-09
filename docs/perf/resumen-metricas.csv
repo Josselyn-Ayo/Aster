@@ -1,0 +1,12 @@
+accion;etiqueta;n;exitos;fallos;exito_pct;total_todas_p50_ms;total_todas_p95_ms;total_todas_max_ms;total_exito_p50_ms;total_exito_p95_ms;total_exito_max_ms;interpret_p50_ms;interpret_p95_ms;execute_p50_ms;execute_p95_ms;tts_p50_ms
+find_files;Buscar archivos y carpetas;19;19;0;100;1453;16384;16384;1453;16384;16384;45;965;1452;16368;1
+web_search;Búsqueda en Internet;12;4;8;33.3;1216;60459;60459;3913;5706;5706;94;60154;1216;60459;0
+conversation;Conversación;10;9;1;90;722;1279;1279;748;1279;1279;2;16;718;1279;1
+open_authorized_app;Abrir aplicación autorizada;8;8;0;100;2341;8319;8319;2341;8319;8319;72;8313;2339;8318;1
+create_folder;Crear carpeta;2;0;2;0;15;35;35;;;;0;13;15;33;0
+system_info;Información del sistema;2;2;0;100;1716;3556;3556;1716;3556;3556;28;2138;1688;3533;17
+automation:open_url;Abrir dirección web (automation:open_url);1;0;1;0;668;668;668;;;;660;660;668;668;0
+automation:spotify;Spotify;1;1;0;100;309;309;309;309;309;309;11;11;289;289;14
+cancelled_task;cancelled_task;1;0;1;0;0;0;0;;;;0;0;0;0;0
+create_file;Crear archivo;1;1;0;100;21;21;21;21;21;21;0;0;21;21;0
+move_files;Mover archivos y carpetas;1;1;0;100;21;21;21;21;21;21;0;0;21;21;0
