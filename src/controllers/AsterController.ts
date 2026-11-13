@@ -723,7 +723,7 @@ export class AsterController {
     const streaming = [...this.messages].reverse().find((m) => m.role === "assistant" && m.streaming);
     if (!streaming) return;
 
-    const text = "Tarea cancelada. No se ejecutó ninguna acción.";
+    const text = "se detuvo la tarea";
     this.finishAssistant(streaming.id, text);
     this.audit({
       action: "cancelled_task",
